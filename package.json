@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",
-    "@nuxtjs/purgecss": "^1.0.0",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",

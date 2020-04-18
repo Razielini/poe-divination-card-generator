@@ -1,12 +1,25 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        poe-divination-card-generator
-      </h1>
-      <h2>
-        First Commit
-      </h2>
+  <div
+    class="tw-flex tw-justify-center tw-p-12 tw-flex-col md:tw-flex-row"
+  >
+    <div
+      class="tw-w-1/2 tw-bg-blue-900 tw-m-12"
+    >
+      <div
+        class="tw-items-center tw-text-center title-bench tw-border-third tw-border tw-text-primary tw-text-xl tw-h-12 tw-p-2 tw-cursor-pointer"
+      >
+        - Divination Bench -
+      </div>
+      <div
+        class="tw-text-center title-bench tw-border-third tw-border tw-text-primary tw-text-xl tw-h-12 tw-p-2 tw-cursor-pointer"
+      >
+        - Images -
+      </div>
+    </div>
+    <div
+      class="tw-w-1/2 tw-bg-green-900 tw-m-12"
+    >
+      Hello World
     </div>
   </div>
 </template>
@@ -16,39 +29,8 @@ export default {}
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+  .title-bench {
+    background: url(/ui/section-title-left.png) no-repeat left top,
+    url(/ui/section-title-right.png) no-repeat right top #000;
+  }
 </style>

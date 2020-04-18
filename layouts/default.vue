@@ -1,13 +1,42 @@
 <template>
-  <div class="w-full bg-red-900">
+  <div
+    class="tw-flex tw-w-full tw-bg-mainbg tw-flex-col md:tw-h-screen tw-justify-between"
+  >
     <nuxt />
+    <footer
+      class="tw-flex tw-text-center tw-justify-center tw-px-4 tw-text-gray-100 tw-bg-gray-800 tw-absolute tw-bottom-0 tw-w-full"
+    >
+      <div
+        class="tw-container tw-py-6"
+      >
+        <div
+          class="tw-flex tw-flex-col tw-items-center tw-justify-between tw-mt-6 md:tw-flex-row"
+        >
+          <div>
+            <a
+              href="#"
+              class="tw-text-xl tw-font-bold"
+            >
+              About
+            </a>
+          </div>
+          <div
+            class="tw-flex tw-mt-4 md:tw-m-0"
+          >
+            <div
+              class="tw-mx-4"
+            >
+              Info - PoE is Poe
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

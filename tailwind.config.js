@@ -24,6 +24,7 @@ module.exports = {
       primary: '#b8905f',
       secondary: '#af6025',
       third: '#3d3f48',
+      mainbg: '#121212',
 
       red: {
         100: '#fff5f5',
