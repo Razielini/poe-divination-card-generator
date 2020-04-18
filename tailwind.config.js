@@ -21,6 +21,9 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
+      primary: '#b8905f',
+      secondary: '#af6025',
+
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
@@ -229,23 +232,7 @@ module.exports = {
       default: '1'
     },
     fontFamily: {
-      sans: [
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"'
-      ],
-      serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace']
+      body: ['Fontin SmallCaps']
     },
     fontSize: {
       xs: '0.75rem',

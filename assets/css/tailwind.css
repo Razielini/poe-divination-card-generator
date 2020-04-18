@@ -3,3 +3,13 @@
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Fontin SmallCaps';
+  font-weight: 400;
+  src: url('/font/Fontin-SmallCaps.ttf') format('ttf');
+}
+
+html {
+  @apply font-body !important
+}
