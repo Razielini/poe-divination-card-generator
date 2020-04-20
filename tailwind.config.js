@@ -25,6 +25,9 @@ module.exports = {
       secondary: '#af6025',
       third: '#3d3f48',
       mainbg: '#121212',
+      borderinput: '#88623b',
+      bgitembench: '#211b14',
+      borderitembench: '#131111',
 
       red: {
         100: '#fff5f5',
