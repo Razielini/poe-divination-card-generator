@@ -111,7 +111,12 @@
 </template>
 
 <script>
-export default {}
+import { Component, Vue } from 'nuxt-property-decorator'
+// const htmlToImage = require('html-to-image')
+// const download = require('downloadjs')
+
+@Component
+export default class ViewPoeDivination extends Vue {}
 </script>
 
 <style>
