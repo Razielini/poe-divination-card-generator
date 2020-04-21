@@ -96,8 +96,10 @@
       >
         - Images -
       </div>
-      <div>
-        Textos
+      <div
+        class="item-bench"
+      >
+        Images
       </div>
     </div>
     <div
