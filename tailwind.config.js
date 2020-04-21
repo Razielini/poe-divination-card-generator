@@ -28,6 +28,7 @@ module.exports = {
       borderinput: '#88623b',
       bgitembench: '#211b14',
       borderitembench: '#131111',
+      hoverpagination: '#b8905f',
 
       red: {
         100: '#fff5f5',
