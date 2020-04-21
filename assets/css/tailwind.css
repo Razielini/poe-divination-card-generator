@@ -13,3 +13,16 @@
 html {
   @apply font-body !important
 }
+
+.title-bench {
+  @apply tw-items-center tw-text-center tw-border-third tw-border tw-text-primary tw-text-xl tw-h-12 tw-p-2 tw-cursor-pointer
+}
+
+.item-bench {
+  @apply tw-flex tw-justify-between tw-border-t-2 tw-border-bgitembench tw-text-primary tw-text-xl tw-p-4
+}
+
+.item-bench input,
+.item-bench textarea {
+  @apply tw-bg-black tw-border-borderinput tw-border tw-py-1 tw-px-2 tw-text-lg
+}

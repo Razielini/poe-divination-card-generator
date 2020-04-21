@@ -6,12 +6,12 @@
       class="tw-w-1/2 tw-m-12"
     >
       <div
-        class="tw-items-center tw-text-center title-bench tw-border-third tw-border tw-text-primary tw-text-xl tw-h-12 tw-p-2 tw-cursor-pointer"
+        class="title-bench"
       >
         - Divination Bench -
       </div>
       <div
-        class="item-bench tw-flex tw-justify-between tw-border-t-2 tw-border-bgitembench tw-text-primary tw-text-xl tw-p-4"
+        class="item-bench"
       >
         <img
           class="tw-object-contain"
@@ -21,13 +21,13 @@
           Title
         </p>
         <input
-          class="tw-w-64 tw-bg-black tw-border-borderinput tw-border tw-py-1 tw-px-2"
+          class="tw-w-64"
           type="text"
           value="Alone in the Darkness"
         >
       </div>
       <div
-        class="item-bench tw-flex tw-justify-between tw-border-t-2 tw-border-bgitembench tw-text-primary tw-text-xl tw-p-4"
+        class="item-bench"
       >
         <img
           class="tw-object-contain"
@@ -37,13 +37,13 @@
           Reward
         </p>
         <input
-          class="tw-w-64 tw-bg-black tw-border-borderinput tw-border tw-py-1 tw-px-2"
+          class="tw-w-64"
           type="text"
           value="Alone in the Darkness"
         >
       </div>
       <div
-        class="item-bench tw-flex tw-justify-between tw-border-t-2 tw-border-bgitembench tw-text-primary tw-text-xl tw-p-4"
+        class="item-bench"
       >
         <img
           class="tw-object-contain"
@@ -53,13 +53,13 @@
           Stack
         </p>
         <input
-          class="tw-w-64 tw-bg-black tw-border-borderinput tw-border tw-py-1 tw-px-2"
+          class="tw-w-64"
           type="number"
           value="6"
         >
       </div>
       <div
-        class="item-bench tw-flex tw-justify-between tw-border-t-2 tw-border-bgitembench tw-text-primary tw-text-xl tw-p-4 tw-flex-col"
+        class="item-bench tw-flex-col"
       >
         <div
           class="tw-flex tw-mb-4"
@@ -73,13 +73,15 @@
           </p>
         </div>
         <textarea
-          class="tw-w-full tw-bg-black tw-border-borderinput tw-border tw-py-1 tw-px-2"
+          class="tw-w-full"
           type="text"
           value="Alone in the Darkness"
-        />
+        >
+          "Sometimes, the most beautiful treasures...are the ones you cannot have."- Beryl, Survivor from the Azurite Mines
+        </textarea>
       </div>
       <div
-        class="tw-text-center title-bench tw-border-third tw-border tw-text-primary tw-text-xl tw-h-12 tw-p-2 tw-cursor-pointer"
+        class="title-bench"
       >
         - Images -
       </div>
@@ -103,12 +105,6 @@ export default {}
   .title-bench {
     background: url(/ui/section-title-left.png) no-repeat left top,
     url(/ui/section-title-right.png) no-repeat right top #000;
-  }
-
-  .item-bench {
-    color: #b8905f;
-    border-top: 2px solid #131111;
-    background-color: #211b14;
   }
 
   .item-bench:hover {
