@@ -19,7 +19,7 @@ html {
 }
 
 .item-bench {
-  @apply tw-flex tw-justify-between tw-border-t-2 tw-border-bgitembench tw-text-primary tw-text-xl tw-p-4
+  @apply tw-flex tw-justify-between tw-border-t-2 tw-border-borderitembench tw-text-primary tw-text-xl tw-p-4 tw-bg-bgitembench
 }
 
 .item-bench input,

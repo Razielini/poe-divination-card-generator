@@ -1,9 +1,9 @@
 <template>
   <div
-    class="tw-flex tw-justify-center tw-p-12 tw-flex-col md:tw-flex-row"
+    class="tw-flex tw-justify-center tw-p-8 tw-flex-col md:tw-flex-row"
   >
     <div
-      class="tw-w-1/2 tw-m-12"
+      class="md:tw-w-1/2 md:tw-m-12"
     >
       <div
         class="title-bench"
@@ -11,15 +11,19 @@
         - Divination Bench -
       </div>
       <div
-        class="item-bench"
+        class="item-bench tw-flex-col md:tw-flex-row"
       >
-        <img
-          class="tw-object-contain"
-          src="/ui/bullet-point.png"
+        <div
+          class="tw-flex tw-mb-4"
         >
-        <p>
-          Title
-        </p>
+          <img
+            class="tw-object-contain tw-mr-4"
+            src="/ui/bullet-point.png"
+          >
+          <p>
+            Title
+          </p>
+        </div>
         <input
           class="tw-w-64"
           type="text"
@@ -27,15 +31,19 @@
         >
       </div>
       <div
-        class="item-bench"
+        class="item-bench tw-flex-col md:tw-flex-row"
       >
-        <img
-          class="tw-object-contain"
-          src="/ui/bullet-point.png"
+        <div
+          class="tw-flex tw-mb-4"
         >
-        <p>
-          Reward
-        </p>
+          <img
+            class="tw-object-contain tw-mr-4"
+            src="/ui/bullet-point.png"
+          >
+          <p>
+            Reward
+          </p>
+        </div>
         <input
           class="tw-w-64"
           type="text"
@@ -43,15 +51,19 @@
         >
       </div>
       <div
-        class="item-bench"
+        class="item-bench tw-flex-col md:tw-flex-row"
       >
-        <img
-          class="tw-object-contain"
-          src="/ui/bullet-point.png"
+        <div
+          class="tw-flex tw-mb-4"
         >
-        <p>
-          Stack
-        </p>
+          <img
+            class="tw-object-contain tw-mr-4"
+            src="/ui/bullet-point.png"
+          >
+          <p>
+            Stack
+          </p>
+        </div>
         <input
           class="tw-w-64"
           type="number"
@@ -74,8 +86,7 @@
         </div>
         <textarea
           class="tw-w-full"
-          type="text"
-          value="Alone in the Darkness"
+          rows="5"
         >
           "Sometimes, the most beautiful treasures...are the ones you cannot have."- Beryl, Survivor from the Azurite Mines
         </textarea>
@@ -109,5 +120,11 @@ export default {}
 
   .item-bench:hover {
     background-color: #392810;
+  }
+
+  .item-bench::before {
+    background-image: url(/ui/subtle-grunge.png);
+    opacity: .1;
+    z-index: -1;
   }
 </style>

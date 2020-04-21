@@ -1,10 +1,10 @@
 <template>
   <div
-    class="tw-flex tw-w-full tw-bg-mainbg tw-flex-col md:tw-h-screen tw-justify-between"
+    class="tw-flex tw-w-full tw-bg-mainbg tw-flex-col md:tw-h-screen tw-justify-between tw-relative"
   >
     <nuxt />
     <footer
-      class="tw-flex tw-text-center tw-justify-center tw-px-4 tw-text-gray-100 tw-bg-gray-800 tw-absolute tw-bottom-0 tw-w-full"
+      class="tw-flex tw-text-center tw-justify-center tw-px-4 tw-text-gray-100 tw-bg-green-800 tw-absolute tw-bottom-0 tw-w-full"
     >
       <div
         class="tw-container tw-py-6"
