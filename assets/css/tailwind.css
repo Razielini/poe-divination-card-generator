@@ -14,6 +14,10 @@ html {
   @apply font-body !important
 }
 
+.footer-bench {
+  @apply bg-repeat-y tw-py-1 tw-border-third tw-border tw-flex tw-text-center tw-justify-center tw-px-4 tw-text-white tw-bottom-0 tw-w-full
+}
+
 .title-bench {
   @apply tw-items-center tw-text-center tw-border-third tw-border tw-text-primary tw-text-xl tw-h-12 tw-p-2 tw-cursor-pointer
 }

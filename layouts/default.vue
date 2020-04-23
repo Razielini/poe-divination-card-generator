@@ -3,37 +3,23 @@
     class="tw-flex tw-w-full tw-bg-mainbg tw-flex-col md:tw-h-screen tw-justify-between tw-relative"
   >
     <nuxt />
-    <footer
-      class="tw-flex tw-text-center tw-justify-center tw-px-4 tw-text-gray-100 tw-bg-green-800 md:tw-absolute tw-bottom-0 tw-w-full"
-    >
-      <div
-        class="tw-container tw-py-6"
-      >
-        <div
-          class="tw-flex tw-flex-col tw-items-center tw-justify-between tw-mt-6 md:tw-flex-row"
-        >
-          <div>
-            <a
-              href="#"
-              class="tw-text-xl tw-font-bold"
-            >
-              About
-            </a>
-          </div>
-          <div
-            class="tw-flex tw-mt-4 md:tw-m-0"
-          >
-            <div
-              class="tw-mx-4"
-            >
-              Info - PoE is Poe
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <c-footer />
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
+import cFooter from '@/components/Footer.vue'
+
+@Component({
+  components: {
+    cFooter
+  }
+})
+export default class lDefault extends Vue {
+  name: string = 'lDefault'
+}
+</script>
 
 <style>
 html {
