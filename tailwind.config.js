@@ -29,40 +29,6 @@ module.exports = {
       bgitembench: '#211b14',
       borderitembench: '#131111',
       hoverpagination: '#b8905f',
-
-      red: {
-        100: '#fff5f5',
-        200: '#fed7d7',
-        300: '#feb2b2',
-        400: '#fc8181',
-        500: '#f56565',
-        600: '#e53e3e',
-        700: '#c53030',
-        800: '#9b2c2c',
-        900: '#742a2a'
-      },
-      green: {
-        100: '#f0fff4',
-        200: '#c6f6d5',
-        300: '#9ae6b4',
-        400: '#68d391',
-        500: '#48bb78',
-        600: '#38a169',
-        700: '#2f855a',
-        800: '#276749',
-        900: '#22543d'
-      },
-      blue: {
-        100: '#ebf8ff',
-        200: '#bee3f8',
-        300: '#90cdf4',
-        400: '#63b3ed',
-        500: '#4299e1',
-        600: '#3182ce',
-        700: '#2b6cb0',
-        800: '#2c5282',
-        900: '#2a4365'
-      }
     },
     spacing: {
       px: '1px',
@@ -217,27 +183,6 @@ module.exports = {
       wider: '0.05em',
       widest: '0.1em'
     },
-    lineHeight: {
-      none: '1',
-      tight: '1.25',
-      snug: '1.375',
-      normal: '1.5',
-      relaxed: '1.625',
-      loose: '2',
-      '3': '.75rem',
-      '4': '1rem',
-      '5': '1.25rem',
-      '6': '1.5rem',
-      '7': '1.75rem',
-      '8': '2rem',
-      '9': '2.25rem',
-      '10': '2.5rem'
-    },
-    listStyleType: {
-      none: 'none',
-      disc: 'disc',
-      decimal: 'decimal'
-    },
     margin: (theme, { negative }) => ({
       auto: 'auto',
       ...theme('spacing'),
@@ -269,6 +214,7 @@ module.exports = {
     },
     minWidth: {
       '0': '0',
+      '2/3': '66%',
       full: '100%'
     },
     objectPosition: {
@@ -288,23 +234,6 @@ module.exports = {
       '50': '0.5',
       '75': '0.75',
       '100': '1'
-    },
-    order: {
-      first: '-9999',
-      last: '9999',
-      none: '0',
-      '1': '1',
-      '2': '2',
-      '3': '3',
-      '4': '4',
-      '5': '5',
-      '6': '6',
-      '7': '7',
-      '8': '8',
-      '9': '9',
-      '10': '10',
-      '11': '11',
-      '12': '12'
     },
     padding: theme => theme('spacing'),
     placeholderColor: theme => theme('colors'),
@@ -349,16 +278,6 @@ module.exports = {
       full: '100%',
       screen: '100vw'
     }),
-    zIndex: {
-      auto: 'auto',
-      '0': '0',
-      '10': '10',
-      '20': '20',
-      '30': '30',
-      '40': '40',
-      '50': '50'
-    },
-    gap: theme => theme('spacing'),
     gridTemplateColumns: {
       none: 'none',
       '1': 'repeat(1, minmax(0, 1fr))',
@@ -373,140 +292,6 @@ module.exports = {
       '10': 'repeat(10, minmax(0, 1fr))',
       '11': 'repeat(11, minmax(0, 1fr))',
       '12': 'repeat(12, minmax(0, 1fr))'
-    },
-    gridColumn: {
-      auto: 'auto',
-      'span-1': 'span 1 / span 1',
-      'span-2': 'span 2 / span 2',
-      'span-3': 'span 3 / span 3',
-      'span-4': 'span 4 / span 4',
-      'span-5': 'span 5 / span 5',
-      'span-6': 'span 6 / span 6',
-      'span-7': 'span 7 / span 7',
-      'span-8': 'span 8 / span 8',
-      'span-9': 'span 9 / span 9',
-      'span-10': 'span 10 / span 10',
-      'span-11': 'span 11 / span 11',
-      'span-12': 'span 12 / span 12'
-    },
-    gridColumnStart: {
-      auto: 'auto',
-      '1': '1',
-      '2': '2',
-      '3': '3',
-      '4': '4',
-      '5': '5',
-      '6': '6',
-      '7': '7',
-      '8': '8',
-      '9': '9',
-      '10': '10',
-      '11': '11',
-      '12': '12',
-      '13': '13'
-    },
-    gridColumnEnd: {
-      auto: 'auto',
-      '1': '1',
-      '2': '2',
-      '3': '3',
-      '4': '4',
-      '5': '5',
-      '6': '6',
-      '7': '7',
-      '8': '8',
-      '9': '9',
-      '10': '10',
-      '11': '11',
-      '12': '12',
-      '13': '13'
-    },
-    gridTemplateRows: {
-      none: 'none',
-      '1': 'repeat(1, minmax(0, 1fr))',
-      '2': 'repeat(2, minmax(0, 1fr))',
-      '3': 'repeat(3, minmax(0, 1fr))',
-      '4': 'repeat(4, minmax(0, 1fr))',
-      '5': 'repeat(5, minmax(0, 1fr))',
-      '6': 'repeat(6, minmax(0, 1fr))'
-    },
-    gridRow: {
-      auto: 'auto',
-      'span-1': 'span 1 / span 1',
-      'span-2': 'span 2 / span 2',
-      'span-3': 'span 3 / span 3',
-      'span-4': 'span 4 / span 4',
-      'span-5': 'span 5 / span 5',
-      'span-6': 'span 6 / span 6'
-    },
-    gridRowStart: {
-      auto: 'auto',
-      '1': '1',
-      '2': '2',
-      '3': '3',
-      '4': '4',
-      '5': '5',
-      '6': '6',
-      '7': '7'
-    },
-    gridRowEnd: {
-      auto: 'auto',
-      '1': '1',
-      '2': '2',
-      '3': '3',
-      '4': '4',
-      '5': '5',
-      '6': '6',
-      '7': '7'
-    },
-    transformOrigin: {
-      center: 'center',
-      top: 'top',
-      'top-right': 'top right',
-      right: 'right',
-      'bottom-right': 'bottom right',
-      bottom: 'bottom',
-      'bottom-left': 'bottom left',
-      left: 'left',
-      'top-left': 'top left'
-    },
-    scale: {
-      '0': '0',
-      '50': '.5',
-      '75': '.75',
-      '90': '.9',
-      '95': '.95',
-      '100': '1',
-      '105': '1.05',
-      '110': '1.1',
-      '125': '1.25',
-      '150': '1.5'
-    },
-    rotate: {
-      '-180': '-180deg',
-      '-90': '-90deg',
-      '-45': '-45deg',
-      '0': '0',
-      '45': '45deg',
-      '90': '90deg',
-      '180': '180deg'
-    },
-    translate: (theme, { negative }) => ({
-      ...theme('spacing'),
-      ...negative(theme('spacing')),
-      '-full': '-100%',
-      '-1/2': '-50%',
-      '1/2': '50%',
-      full: '100%'
-    }),
-    skew: {
-      '-12': '-12deg',
-      '-6': '-6deg',
-      '-3': '-3deg',
-      '0': '0',
-      '3': '3deg',
-      '6': '6deg',
-      '12': '12deg'
     },
     transitionProperty: {
       none: 'none',
