@@ -1,6 +1,28 @@
 <template>
-  <div>
-    Flags
+  <div
+    class="tw-h-12 tw-w-full tw-bg-black tw-px-24 tw-py-3"
+  >
+    <div
+      class="tw-flex tw-items-center tw-justify-end tw-text-primary hover:tw-text-secondary"
+    >
+      <p
+        class="tw-px-2 tw-cursor-pointer"
+      >
+        Languages
+      </p>
+      <p
+        class="tw-flex tw-self-center tw-cursor-pointer"
+      >
+        <img
+          class="tw-p-1 active"
+          src="flags/ES.png"
+        >
+        <img
+          class="tw-p-1"
+          src="flags/GB.png"
+        >
+      </p>
+    </div>
   </div>
 </template>
 
@@ -14,14 +36,18 @@ export default class cLangFlags extends Vue {
 </script>
 
 <style>
-  .footer-bench {
-    background: url(/ui/section-title-left.png) repeat-y left top,
-    url(/ui/section-title-right.png) repeat-y right top #000;
+  img {
+    filter: grayscale(100%);
+    border: 1px dashed transparent;
   }
 
-  .footer-bench::before {
-    background-image: url(/ui/subtle-grunge.png);
-    opacity: .1;
-    z-index: -1;
+  img.active {
+    filter: grayscale(0%);
+    border-color: #FFF;
+  }
+
+  img:hover {
+    filter: grayscale(0%);
+    /* width: 190px; */
   }
 </style>
