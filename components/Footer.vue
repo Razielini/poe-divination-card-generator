@@ -9,7 +9,7 @@
         <div
           class="tw-flex tw-justify-center tw-my-2"
         >
-          Made with (L) for Razielini
+          Made by the exile Razielini
         </div>
 
         <div

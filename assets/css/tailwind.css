@@ -26,6 +26,10 @@ html {
   @apply tw-flex tw-justify-between tw-border-t-2 tw-border-borderitembench tw-text-primary tw-text-xl tw-bg-bgitembench
 }
 
+.pagination-bench {
+  @apply tw-mx-2 tw-cursor-pointer tw-text-white 
+}
+
 .item-bench input,
 .item-bench textarea {
   @apply tw-bg-black tw-border-borderinput tw-border tw-py-1 tw-px-2 tw-text-lg tw-min-w-2/3

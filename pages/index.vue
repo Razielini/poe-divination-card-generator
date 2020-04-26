@@ -3,7 +3,7 @@
     class="tw-flex tw-justify-center tw-pt-8 md:tw-px-8 md:tw-pt-16 tw-flex-col md:tw-flex-row"
   >
     <div
-      class="md:tw-w-1/2 md:tw-mx-8 md:tw-mb-8 md:tw-mt-0 tw-px-4 md:tw-p-0"
+      class="md:tw-w-1/2 md:tw-mx-8 md:tw-mb-8 md:tw-mt-0 tw-px-4 md:tw-p-0 tw-max-w-xl"
     >
       <div
         class="title-bench"
@@ -113,7 +113,7 @@
           class="tw-flex tw-justify-end"
         >
           <p
-            class="tw-mx-2 tw-cursor-pointer hover:tw-text-hoverpagination"
+            class="pagination-bench hover:tw-text-hoverpagination"
             @click="lessPage()"
           >
             &#060; Prev
@@ -124,7 +124,7 @@
             {{ pagination.page }} / {{ totalPages }}
           </p>
           <p
-            class="tw-mx-2 tw-cursor-pointer hover:tw-text-hoverpagination"
+            class="pagination-bench hover:tw-text-hoverpagination"
             @click="addPage()"
           >
             Next &#62;
