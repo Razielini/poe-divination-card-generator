@@ -3,7 +3,7 @@
     class="tw-h-12 tw-w-full tw-bg-black tw-px-24 tw-py-3"
   >
     <div
-      class="tw-flex tw-items-center tw-justify-end tw-text-primary hover:tw-text-secondary"
+      class="flag-bench hover:tw-text-secondary"
     >
       <p
         class="tw-px-2 tw-cursor-pointer"
@@ -36,17 +36,17 @@ export default class cLangFlags extends Vue {
 </script>
 
 <style>
-  img {
+  .flag-bench img {
     filter: grayscale(100%);
     border: 1px dashed transparent;
   }
 
-  img.active {
+  .flag-bench img.active {
     filter: grayscale(0%);
     border-color: #FFF;
   }
 
-  img:hover {
+  .flag-bench img:hover {
     filter: grayscale(0%);
     /* width: 190px; */
   }

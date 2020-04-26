@@ -30,6 +30,11 @@ html {
   @apply tw-mx-2 tw-cursor-pointer tw-text-white 
 }
 
+
+.flag-bench {
+  @apply tw-flex tw-items-center tw-justify-end tw-text-primary
+}
+
 .item-bench input,
 .item-bench textarea {
   @apply tw-bg-black tw-border-borderinput tw-border tw-py-1 tw-px-2 tw-text-lg tw-min-w-2/3
