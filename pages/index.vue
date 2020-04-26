@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tw-flex tw-justify-center tw-pt-8 md:tw-px-8 md:tw-pt-16 tw-flex-col md:tw-flex-row"
+    class="tw-flex tw-justify-center tw-pt-8 md:tw-px-8 md:tw-pt-8 tw-flex-col md:tw-flex-row"
   >
     <div
       class="md:tw-w-1/2 md:tw-mx-8 md:tw-mb-8 md:tw-mt-0 tw-px-4 md:tw-p-0 tw-max-w-xl"

@@ -1,7 +1,8 @@
 <template>
   <div
-    class="tw-flex tw-w-full tw-bg-mainbg tw-flex-col md:tw-h-screen tw-justify-between tw-relative"
+    class="tw-flex tw-w-full tw-bg-mainbg tw-flex-col md:tw-h-screen tw-justify-start tw-relative"
   >
+    <c-lang-flags />
     <nuxt />
     <c-footer />
   </div>
@@ -10,10 +11,12 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import cFooter from '@/components/Footer.vue'
+import cLangFlags from '@/components/LangFlags.vue'
 
 @Component({
   components: {
-    cFooter
+    cFooter,
+    cLangFlags
   }
 })
 export default class lDefault extends Vue {
