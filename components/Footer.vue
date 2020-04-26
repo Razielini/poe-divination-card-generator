@@ -55,7 +55,7 @@
           </nuxt-link>
 
           <nuxt-link
-            to="https://www.facebook.com/"
+            to="https://twitter.com/Razielini"
           >
             <svg
               height="24pt"
@@ -69,8 +69,9 @@
             </svg>
           </nuxt-link>
 
-          <nuxt-link
-            to="https://www.facebook.com/"
+          <a
+            href="https://github.com/Razielini/poe-divination-card-generator"
+            target="_blank"
           >
             <svg
               enable-background="new 0 0 24 24"
@@ -83,10 +84,11 @@
             >
               <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
             </svg>
-          </nuxt-link>
+          </a>
 
-          <nuxt-link
-            to="https://www.facebook.com/"
+          <a
+            href="https://tailwindcss.com/"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +100,36 @@
             >
               <path d="M14.4,11.52Q17.28,0,28.8,0c11.52,0,13,8.64,18.72,10.08q5.76,1.44,10.08-4.32Q54.72,17.28,43.2,17.28c-11.52,0-13-8.64-18.72-10.08Q18.72,5.76,14.4,11.52ZM0,28.8Q2.88,17.28,14.4,17.28c11.52,0,13,8.64,18.72,10.08Q38.88,28.8,43.2,23,40.32,34.56,28.8,34.56c-11.52,0-13-8.64-18.72-10.08Q4.32,23,0,28.8Z" />
             </svg>
-          </nuxt-link>
+          </a>
+
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+          >
+            <Logo />
+          </a>
+
+          <a
+            href="https://vuejs.org/"
+            target="_blank"
+          >
+            <svg
+              height="24pt"
+              width="24pt"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 261.76 226.69"
+            >
+              <g transform="matrix(1.3333 0 0 -1.3333 -76.311 313.34)">
+                <g transform="translate(178.06 235.01)">
+                  <path d="m0 0-22.669-39.264-22.669 39.264h-75.491l98.16-170.02 98.16 170.02z" fill="#41b883" />
+                </g>
+                <g transform="translate(178.06 235.01)">
+                  <path d="m0 0-22.669-39.264-22.669 39.264h-36.227l58.896-102.01 58.896 102.01z" fill="#34495e" />
+                </g>
+              </g>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -107,8 +138,13 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import Logo from '@/components/Logo.vue'
 
-@Component
+@Component({
+  components: {
+    Logo
+  }
+})
 export default class cFooter extends Vue {
   name: string = 'cFooter'
 }
