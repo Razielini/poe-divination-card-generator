@@ -107,7 +107,7 @@
         {{ this.$t("bench.images") }}
       </div>
       <div
-        :class="`section-bench item-bench tw-flex-col ${!selectSection ? 'tw-h-164 md:tw-h-108' : 'tw-h-px'}`"
+        :class="`section-bench item-bench tw-flex-col ${!selectSection ? 'tw-h-164 md:tw-h-116' : 'tw-h-px'}`"
       >
         <div
           class="tw-flex tw-justify-end"
@@ -215,7 +215,6 @@ export default class ViewPoeDivination extends Vue {
   }
 
   get divinationPaginated () {
-    // console.log('BrowserWidth :: ', this.BrowserWidth())
     const bw: string = 'this.BrowserWidth()'
     if (bw === 'xs') {
       this.pagination.itemsPerPage = 8
