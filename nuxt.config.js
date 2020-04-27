@@ -44,7 +44,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-purgecss'
+    'nuxt-purgecss',
+    '@nuxtjs/device'
   ],
   /*
   ** TYPESCRIPT 

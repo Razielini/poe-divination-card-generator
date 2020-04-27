@@ -107,7 +107,7 @@
         {{ this.$t("bench.images") }}
       </div>
       <div
-        :class="`section-bench item-bench tw-flex-col ${!selectSection ? 'tw-h-164 md:tw-h-116' : 'tw-h-px'}`"
+        :class="`section-bench item-bench tw-flex-col ${!selectSection ? 'tw-h-134 md:tw-h-116' : 'tw-h-px'}`"
       >
         <div
           class="tw-flex tw-justify-end"
@@ -215,8 +215,8 @@ export default class ViewPoeDivination extends Vue {
   }
 
   get divinationPaginated () {
-    const bw: string = 'this.BrowserWidth()'
-    if (bw === 'xs') {
+    const bw: boolean = this.$device.isMobile
+    if (bw) {
       this.pagination.itemsPerPage = 8
     } else {
       this.pagination.itemsPerPage = 9
@@ -225,10 +225,12 @@ export default class ViewPoeDivination extends Vue {
     const images = [...this.divinationImages]
     const itemsPerPage: number = this.pagination.itemsPerPage
     const initial: number = ((this.pagination.page - 1) * itemsPerPage)
+    /*
     console.log('images :: ', images)
     console.log('initial :: ', initial)
-    const slice = images.slice(initial, initial + itemsPerPage)
-    console.log('slice :: ', slice)
+    */
+    // const slice = images.slice(initial, initial + itemsPerPage)
+    // console.log('slice :: ', slice)
     return images.slice(initial, initial + itemsPerPage)
   }
 
@@ -237,7 +239,7 @@ export default class ViewPoeDivination extends Vue {
   }
 
   saveIMG () {
-    console.log('saveIMG')
+    // console.log('saveIMG')
     this.createCard = true
     htmlToImage.toPng(document.getElementById('wrapper-divination-card'))
       .then((dataUrl: any) => {
@@ -245,7 +247,7 @@ export default class ViewPoeDivination extends Vue {
         img.src = dataUrl
         // this.printTitle('Hello')
         download(dataUrl, this.toSlug(this.divination.title) + '.png')
-        console.log('saveIMG img ::', img)
+        // console.log('saveIMG img ::', img)
       })
       .catch((error: any) => {
         console.error('oops, something went wrong!', error)
@@ -419,9 +421,10 @@ export default class ViewPoeDivination extends Vue {
 
   mounted () {
     console.info('mounted ::', name)
+    /*
     console.info('i18n ::', this.$i18n)
-    console.info('i18n :: locale ::', this.$i18n.locale)
     console.info('i18n :: messages ::', this.$i18n.messages)
+    */
     this.divination = this.$i18n.messages[this.$i18n.locale].info
   }
 }
