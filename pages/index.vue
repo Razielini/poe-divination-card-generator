@@ -116,7 +116,7 @@
             class="pagination-bench hover:tw-text-hoverpagination"
             @click="lessPage()"
           >
-            &#060; Prev
+            &#060; {{ this.$t("pagination.prev") }}
           </p>
           <p
             class="tw-mx-2 tw-cursor-pointer"
@@ -127,7 +127,7 @@
             class="pagination-bench hover:tw-text-hoverpagination"
             @click="addPage()"
           >
-            Next &#62;
+            {{ this.$t("pagination.next") }} &#62;
           </p>
         </div>
         <div
