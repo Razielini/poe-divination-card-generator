@@ -8,20 +8,20 @@
       <p
         class="tw-px-2 tw-cursor-pointer"
       >
-        Languages
+        {{ this.$t("languages") }}
       </p>
       <p
         class="tw-flex tw-self-center tw-cursor-pointer"
       >
         <img
-          class="tw-p-1"
+          :class="`tw-p-1 ' + ${ $i18n.locale === 'es' ? 'active' : null }`"
           src="flags/ES.png"
-          @click="$i18n.locale = 'es'"
+          @click="updateLang('es')"
         >
         <img
-          class="tw-p-1 active"
+          :class="`tw-p-1 ' + ${ $i18n.locale === 'en' ? 'active' : null }`"
           src="flags/GB.png"
-          @click="$i18n.locale = 'en'"
+          @click="updateLang('en')"
         >
       </p>
     </div>
@@ -34,6 +34,10 @@ import { Component, Vue } from 'nuxt-property-decorator'
 @Component
 export default class cLangFlags extends Vue {
   name: string = 'cLangFlags'
+
+  updateLang (lang: string) {
+    this.$i18n.locale = lang
+  }
 }
 </script>
 
