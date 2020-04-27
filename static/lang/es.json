@@ -1,3 +1,24 @@
 {
-  "title": "Hola, como estas?"
+  "languages": "Idiomas",
+  "title": "Nombre",
+  "reward": "Recompensa",
+  "stack": "Pila",
+  "lore": "Texto historia",
+  "btnDownload": "Descargar Carta",
+  "btnLoading": "Creando Carta..",
+  "bench": {
+    "info": "- Forja de Adivinación -",
+    "images": "- Imagenes -"
+  },
+  "info": {
+    "title": "Solo en la oscuridad",
+    "reward": "Item de Delve",
+    "stack": 6,
+    "lore": "A veces, los tesoros más hermosos... son los que no puedes tener. - Bery, Sobreviviente de las minas de azurita",
+    "img": "Alone_in_the_Darkness_card_art.png"
+  },
+  "footer": {
+    "madeBy": "Hecho por el exiliado Razielini.",
+    "disclaimer": "Este sitio está hecho por un fan y no está afiliado a Grinding Gear Games de ninguna manera."
+  }
 }
