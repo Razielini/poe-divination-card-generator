@@ -20,5 +20,9 @@
   "footer": {
     "madeBy": "Hecho por el exiliado Razielini.",
     "disclaimer": "Este sitio está hecho por un fan y no está afiliado a Grinding Gear Games de ninguna manera."
+  },
+  "pagination": {
+    "prev": "Anterior",
+    "next": "Siguiente"
   }
 }
