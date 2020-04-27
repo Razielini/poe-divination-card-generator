@@ -25,7 +25,7 @@
               src="/ui/bullet-point.png"
             >
             <p>
-              Title
+              {{ this.$t("title") }}
             </p>
           </div>
           <input

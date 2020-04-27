@@ -16,10 +16,12 @@
         <img
           class="tw-p-1 active"
           src="flags/ES.png"
+          @click="$i18n.locale = 'es'"
         >
         <img
           class="tw-p-1"
           src="flags/GB.png"
+          @click="$i18n.locale = 'en'"
         >
       </p>
     </div>
@@ -48,6 +50,5 @@ export default class cLangFlags extends Vue {
 
   .flag-bench img:hover {
     filter: grayscale(0%);
-    /* width: 190px; */
   }
 </style>
