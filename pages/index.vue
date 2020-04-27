@@ -169,7 +169,7 @@
           {{ divination.title }}
         </div>
         <div
-          class="tw-text-white tw-mx-14 md:tw-mx-26 tw-mt-40 tw-text-xl"
+          class="tw-text-white tw-mx-14 tw-mt-40 tw-text-xl"
         >
           {{ divination.stack }}
         </div>
@@ -391,24 +391,6 @@ export default class ViewPoeDivination extends Vue {
       .replace(/-+$/, '')
   }
 
-  /*
-  BrowserWidth () {
-    if (window.innerWidth < 768) {
-      // Extra Small Device
-      return 'xs'
-    } else if (window.innerWidth < 991) {
-      // Small Device
-      return 'sm'
-    } else if (window.innerWidth < 1199) {
-      // Medium Device
-      return 'md'
-    } else {
-      // Large Device
-      return 'lg'
-    }
-  }
-  */
-
   activeImage (src: string) {
     let res: string = ''
     if (src === this.divination.img) {
@@ -481,8 +463,8 @@ export default class ViewPoeDivination extends Vue {
     background-size: 350px;
     background-position-x: center;
     background-position-y: 49px;
-    max-width: 500px;
-    min-width: 350px;
+    max-width: 380px;
+    min-width: 380px;
   }
 
   .frame-divination-card {
