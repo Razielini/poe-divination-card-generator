@@ -14,12 +14,12 @@
         class="tw-flex tw-self-center tw-cursor-pointer"
       >
         <img
-          class="tw-p-1 active"
+          class="tw-p-1"
           src="flags/ES.png"
           @click="$i18n.locale = 'es'"
         >
         <img
-          class="tw-p-1"
+          class="tw-p-1 active"
           src="flags/GB.png"
           @click="$i18n.locale = 'en'"
         >
