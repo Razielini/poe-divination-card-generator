@@ -12,7 +12,7 @@
         {{ this.$t("bench.info") }}
       </div>
       <div
-        v-if="selectSection"
+        :class="`section-bench ${selectSection ? 'tw-h-148 md:tw-h-120' : 'tw-h-px'}`"
       >
         <div
           class="item-bench tw-flex-col md:tw-flex-row tw-p-4"
@@ -107,8 +107,7 @@
         {{ this.$t("bench.images") }}
       </div>
       <div
-        v-if="!selectSection"
-        class="item-bench tw-flex-col"
+        :class="`section-bench item-bench tw-flex-col ${!selectSection ? 'tw-h-164 md:tw-h-108' : 'tw-h-px'}`"
       >
         <div
           class="tw-flex tw-justify-end"
@@ -216,8 +215,8 @@ export default class ViewPoeDivination extends Vue {
   }
 
   get divinationPaginated () {
-    console.log('BrowserWidth :: ', this.BrowserWidth())
-    const bw: string = this.BrowserWidth()
+    // console.log('BrowserWidth :: ', this.BrowserWidth())
+    const bw: string = 'this.BrowserWidth()'
     if (bw === 'xs') {
       this.pagination.itemsPerPage = 8
     } else {
@@ -392,6 +391,7 @@ export default class ViewPoeDivination extends Vue {
       .replace(/-+$/, '')
   }
 
+  /*
   BrowserWidth () {
     if (window.innerWidth < 768) {
       // Extra Small Device
@@ -407,6 +407,7 @@ export default class ViewPoeDivination extends Vue {
       return 'lg'
     }
   }
+  */
 
   activeImage (src: string) {
     let res: string = ''
@@ -481,7 +482,7 @@ export default class ViewPoeDivination extends Vue {
     background-position-x: center;
     background-position-y: 49px;
     max-width: 500px;
-    min-width: 500px;
+    min-width: 350px;
   }
 
   .frame-divination-card {
@@ -490,5 +491,13 @@ export default class ViewPoeDivination extends Vue {
     background-position: top;
     background-size: 380px;
     min-height: 668px;
+  }
+
+  .section-bench {
+    overflow:hidden;
+    -webkit-transition: height 500ms;
+    -moz-transition: height 500ms;
+    -o-transition: height 500ms;
+    transition: height 500ms;
   }
 </style>
