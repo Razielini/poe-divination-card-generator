@@ -9,13 +9,13 @@
         <div
           class="tw-flex tw-justify-center tw-my-2"
         >
-          Made by the exile Razielini
+          {{ this.$t("footer.madeBy") }}
         </div>
 
         <div
           class="tw-flex tw-justify-center"
         >
-          This site is fan-made and not affiliated with Grinding Gear Games in any way.
+          {{ this.$t("footer.disclaimer") }}
         </div>
       </div>
       <div
