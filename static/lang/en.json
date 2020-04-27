@@ -1,4 +1,5 @@
 {
+  "languages": "Languages",
   "title": "Title",
   "reward": "Reward",
   "stack": "Stack",
@@ -15,5 +16,9 @@
     "stack": 6,
     "lore": "Sometimes, the most beautiful treasures...are the ones you cannot have. Beryl, Survivor from the Azurite Mines",
     "img": "Alone_in_the_Darkness_card_art.png"
+  },
+  "footer": {
+    "madeBy": "Made by the exile Razielini",
+    "disclaimer": "This site is fan-made and not affiliated with Grinding Gear Games in any way."
   }
 }
