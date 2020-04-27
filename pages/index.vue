@@ -9,7 +9,7 @@
         class="title-bench"
         @click="selectSection = true"
       >
-        - Divination Bench -
+        {{ this.$t("bench.info") }}
       </div>
       <div
         v-if="selectSection"
@@ -46,7 +46,7 @@
               src="/ui/bullet-point.png"
             >
             <p>
-              Reward
+              {{ this.$t("reward") }}
             </p>
           </div>
           <input
@@ -67,7 +67,7 @@
               src="/ui/bullet-point.png"
             >
             <p>
-              Stack
+              {{ this.$t("stack") }}
             </p>
           </div>
           <input
@@ -88,10 +88,11 @@
               src="/ui/bullet-point.png"
             >
             <p>
-              Lore
+              {{ this.$t("lore") }}
             </p>
           </div>
           <textarea
+            v-model="divination.lore"
             class="tw-w-full"
             rows="5"
           >
@@ -103,7 +104,7 @@
         class="title-bench"
         @click="selectSection = false"
       >
-        - Images -
+        {{ this.$t("bench.images") }}
       </div>
       <div
         v-if="!selectSection"
@@ -151,7 +152,7 @@
           :disabled="createCard"
           @click="saveIMG()"
         >
-          {{ createCard ? 'Creating Card....' : 'Download Card' }}
+          {{ createCard ? this.$t("btnLoading") : this.$t("btnDownload") }}
         </button>
       </div>
     </div>
@@ -436,6 +437,10 @@ export default class ViewPoeDivination extends Vue {
 
   mounted () {
     console.info('mounted ::', name)
+    console.info('i18n ::', this.$i18n)
+    console.info('i18n :: locale ::', this.$i18n.locale)
+    console.info('i18n :: messages ::', this.$i18n.messages)
+    this.divination = this.$i18n.messages[this.$i18n.locale].info
   }
 }
 </script>
@@ -476,6 +481,7 @@ export default class ViewPoeDivination extends Vue {
     background-position-x: center;
     background-position-y: 49px;
     max-width: 500px;
+    min-width: 500px;
   }
 
   .frame-divination-card {
