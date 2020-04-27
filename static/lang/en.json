@@ -1,3 +1,19 @@
 {
-  "title": "Hello, how are you?"
+  "title": "Title",
+  "reward": "Reward",
+  "stack": "Stack",
+  "lore": "Lore",
+  "btnDownload": "Download Card...",
+  "btnLoading": "Creating Card...",
+  "bench": {
+    "info": "- Divination Card -",
+    "images": "- Images -"
+  },
+  "info": {
+    "title": "Alone in the Darkness",
+    "reward": "Delve Item",
+    "stack": 6,
+    "lore": "Sometimes, the most beautiful treasures...are the ones you cannot have. Beryl, Survivor from the Azurite Mines",
+    "img": "Alone_in_the_Darkness_card_art.png"
+  }
 }
