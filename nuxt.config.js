@@ -44,8 +44,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-purgecss',
-    '@nuxtjs/device'
+    'nuxt-purgecss'
   ],
   /*
   ** TYPESCRIPT 
@@ -55,15 +54,19 @@ export default {
       eslint: false
     }
   },
+  router: {
+    base: '/divination/'
+  },
   /*
   ** Build configuration
   */
   build: {
-    extractCSS: true,
+    extractCSS: true
     /*
     ** You can extend webpack config here
-    */
+    
     extend (config, ctx) {
     }
+    */
   }
 }
