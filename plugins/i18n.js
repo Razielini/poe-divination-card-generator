@@ -13,6 +13,7 @@ export default ({ app }) => {
 
     // Set the fallback locale in case the current locale can't be found
     fallbackLocale: 'en',
+    seo: false,
 
     // Associate each locale to a content file
     messages: {
