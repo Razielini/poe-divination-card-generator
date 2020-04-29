@@ -1,8 +1,12 @@
-# poe-divination-card-generator
+# POE Divination Card Generator
 
-> description
+> A PoE (Path of Exile) Divination card generator
 
-## Build Setup
+![PoeDivinationCard](static/main.jpg)
+
+---
+
+## Project Setup
 
 ``` bash
 # install dependencies
