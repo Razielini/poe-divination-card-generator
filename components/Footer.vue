@@ -153,12 +153,12 @@ export default class cFooter extends Vue {
 
 <style>
   .footer-bench {
-    background: url(/ui/section-title-left.png) repeat-y left top,
-    url(/ui/section-title-right.png) repeat-y right top #000;
+    background: url(/divination/ui/section-title-left.png) repeat-y left top,
+    url(/divination/ui/section-title-right.png) repeat-y right top #000;
   }
 
   .footer-bench::before {
-    background-image: url(/ui/subtle-grunge.png);
+    background-image: url(/divination/ui/subtle-grunge.png);
     opacity: .1;
     z-index: -1;
   }
