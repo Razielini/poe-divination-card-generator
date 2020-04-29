@@ -209,7 +209,7 @@ export default class ViewPoeDivination extends Vue {
 
   divination: any = {
     title: 'Alone in the Darkness',
-    stack: '69',
+    stack: '6',
     reward: 'Delve Item',
     lore: 'Sometimes, the most beautiful treasures...are the ones you cannot have. - Beryl, Survivor from the Azurite Mines',
     img: 'Alone_in_the_Darkness_card_art.png'
@@ -225,12 +225,6 @@ export default class ViewPoeDivination extends Vue {
     const images = [...this.divinationImages]
     const itemsPerPage: number = this.pagination.itemsPerPage
     const initial: number = ((this.pagination.page - 1) * itemsPerPage)
-    /*
-    console.log('images :: ', images)
-    console.log('initial :: ', initial)
-    */
-    // const slice = images.slice(initial, initial + itemsPerPage)
-    // console.log('slice :: ', slice)
     return images.slice(initial, initial + itemsPerPage)
   }
 
@@ -239,15 +233,12 @@ export default class ViewPoeDivination extends Vue {
   }
 
   saveIMG () {
-    // console.log('saveIMG')
     this.createCard = true
     htmlToImage.toPng(document.getElementById('wrapper-divination-card'))
       .then((dataUrl: any) => {
         let img = new Image()
         img.src = dataUrl
-        // this.printTitle('Hello')
         download(dataUrl, this.toSlug(this.divination.title) + '.png')
-        // console.log('saveIMG img ::', img)
       })
       .catch((error: any) => {
         console.error('oops, something went wrong!', error)
@@ -421,10 +412,6 @@ export default class ViewPoeDivination extends Vue {
 
   mounted () {
     console.info('mounted ::', name)
-    /*
-    console.info('i18n ::', this.$i18n)
-    console.info('i18n :: messages ::', this.$i18n.messages)
-    */
     this.$nextTick(() => {
       this.width = this.$el.clientWidth
     })
