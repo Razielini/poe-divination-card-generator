@@ -22,7 +22,7 @@
           >
             <img
               class="tw-object-contain tw-mr-4"
-              src="/divination/ui/bullet-point.png"
+              src="/ui/bullet-point.png"
             >
             <p>
               {{ this.$t("title") }}
@@ -43,7 +43,7 @@
           >
             <img
               class="tw-object-contain tw-mr-4"
-              src="/divination/ui/bullet-point.png"
+              src="/ui/bullet-point.png"
             >
             <p>
               {{ this.$t("reward") }}
@@ -64,7 +64,7 @@
           >
             <img
               class="tw-object-contain tw-mr-4"
-              src="/divination/ui/bullet-point.png"
+              src="/ui/bullet-point.png"
             >
             <p>
               {{ this.$t("stack") }}
@@ -85,7 +85,7 @@
           >
             <img
               class="tw-object-contain tw-mr-4"
-              src="/divination/ui/bullet-point.png"
+              src="/ui/bullet-point.png"
             >
             <p>
               {{ this.$t("lore") }}
@@ -137,7 +137,7 @@
             v-for="item in divinationPaginated"
             :key="item.src"
             :class="`tw-cursor-pointer tw-w-1/2 md:tw-w-1/3 tw-p-1 ${activeImage(item.src)}`"
-            :src="`/divination/img/${item.src}.jpg`"
+            :src="`/img/${item.src}.jpg`"
             @click="imageSelected(item)"
           >
         </div>
@@ -157,7 +157,7 @@
     </div>
     <div
       id="wrapper-divination-card"
-      :style="`background-image: url(/divination/img/${divination.img}.png);`"
+      :style="`background-image: url(/img/${divination.img}.png);`"
       class="tw-bg-no-repeat tw-mt-8 md:tw-mt-0 tw-mx-0"
     >
       <div
@@ -422,8 +422,8 @@ export default class ViewPoeDivination extends Vue {
 
 <style>
   .title-bench {
-    background: url(/divination/ui/section-title-left.png) no-repeat left top,
-    url(/divination/ui/section-title-right.png) no-repeat right top #000;
+    background: url(/ui/section-title-left.png) no-repeat left top,
+    url(/ui/section-title-right.png) no-repeat right top #000;
   }
 
   .item-bench:hover {
@@ -431,7 +431,7 @@ export default class ViewPoeDivination extends Vue {
   }
 
   .item-bench::before {
-    background-image: url(/divination/ui/subtle-grunge.png);
+    background-image: url(/ui/subtle-grunge.png);
     opacity: .1;
     z-index: -1;
   }
@@ -460,7 +460,7 @@ export default class ViewPoeDivination extends Vue {
 
   .frame-divination-card {
     min-height: 668px;
-    background-image: url('/divination/ui/divination_card_frame.png');
+    background-image: url('/ui/divination_card_frame.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 380px;
