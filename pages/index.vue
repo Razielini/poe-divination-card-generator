@@ -437,34 +437,33 @@ export default class ViewPoeDivination extends Vue {
   }
 
   .image-container img {
-    filter: grayscale(100%);
     border: 1px dashed transparent;
+    filter: grayscale(100%);
   }
 
   .image-container img:hover {
     filter: grayscale(0%);
-    /* width: 190px; */
   }
 
   .image-container img.active {
-    filter: grayscale(0%);
     border: 1px dashed;
+    filter: grayscale(0%);
   }
 
   #wrapper-divination-card {
+    max-width: 380px;
+    min-width: 380px;
     background-size: 350px;
     background-position-x: center;
     background-position-y: 49px;
-    max-width: 380px;
-    min-width: 380px;
   }
 
   .frame-divination-card {
+    min-height: 668px;
     background-image: url('/divination/ui/divination_card_frame.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 380px;
-    min-height: 668px;
   }
 
   .section-bench {
