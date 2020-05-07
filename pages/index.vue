@@ -137,7 +137,7 @@
             v-for="item in divinationPaginated"
             :key="item.src"
             :class="`tw-cursor-pointer tw-w-1/2 md:tw-w-1/3 tw-p-1 ${activeImage(item.src)}`"
-            :src="`/divination/img/${item.src}`"
+            :src="`/divination/img/${item.src}.jpg`"
             @click="imageSelected(item)"
           >
         </div>
@@ -157,7 +157,7 @@
     </div>
     <div
       id="wrapper-divination-card"
-      :style="`background-image: url(/divination/img/${divination.img});`"
+      :style="`background-image: url(/divination/img/${divination.img}.png);`"
       class="tw-bg-no-repeat tw-mt-8 md:tw-mt-0 tw-mx-0"
     >
       <div
@@ -212,7 +212,7 @@ export default class ViewPoeDivination extends Vue {
     stack: '6',
     reward: 'Delve Item',
     lore: 'Sometimes, the most beautiful treasures...are the ones you cannot have. - Beryl, Survivor from the Azurite Mines',
-    img: 'Alone_in_the_Darkness_card_art.png'
+    img: 'Alone_in_the_Darkness_card_art'
   }
 
   get divinationPaginated () {
