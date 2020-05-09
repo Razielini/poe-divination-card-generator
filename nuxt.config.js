@@ -28,7 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/i18n.js'
+    '~/plugins/i18n.js',
+    '~/plugins/vue-lazyload'
   ],
   /*
   ** Nuxt.js dev-modules
