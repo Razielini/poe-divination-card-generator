@@ -136,8 +136,8 @@
           <img
             v-for="item in divinationPaginated"
             :key="item.src"
+            v-lazy="`/img/${item.src}.jpg`"
             :class="`tw-cursor-pointer tw-w-1/2 md:tw-w-1/3 tw-p-1 ${activeImage(item.src)}`"
-            :src="`/img/${item.src}.jpg`"
             @click="imageSelected(item)"
           >
         </div>
