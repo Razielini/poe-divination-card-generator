@@ -1,4 +1,3 @@
-
 export default {
   mode: 'universal',
   /*
@@ -48,11 +47,14 @@ export default {
     'nuxt-purgecss'
   ],
   /*
-  ** TYPESCRIPT 
+  ** TYPESCRIPT
   */
   typescript: {
     typeCheck: {
-      eslint: false
+      eslint: {
+        enabled: false,
+        files: 'src/**/*.{js,vue}'
+      }
     }
   },
   render: {
@@ -67,7 +69,6 @@ export default {
     extractCSS: true
     /*
     ** You can extend webpack config here
-    
     extend (config, ctx) {
     }
     */

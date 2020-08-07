@@ -12,26 +12,29 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxt/types": "^0.6.1",
-    "@nuxt/typescript-runtime": "latest",
+    "@nuxt/typescript-runtime": "^1.0.0",
     "@nuxtjs/device": "^1.2.7",
     "downloadjs": "^1.4.7",
     "html-to-image": "^0.1.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.14.1",
     "nuxt-property-decorator": "^2.5.0",
-    "vue-class-component": "^7.0.2",
-    "vue-i18n": "^8.15.3",
+    "vue-class-component": "^7.2.5",
+    "vue-i18n": "^8.20.0",
     "vue-lazyload": "^1.3.3",
-    "vue-property-decorator": "^8.3.0"
+    "vue-property-decorator": "^8.5.1"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "latest",
-    "@nuxtjs/tailwindcss": "^1.0.0",
+    "@nuxt/types": "npm:@nuxt/types-edge@^2.14.2-26612668.4a9c9a15",
+    "@nuxt/typescript-build": "^2.0.2",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
-    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/eslint-module": "^1.2.0",
+    "@nuxtjs/tailwindcss": "^1.4.1",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2"
+    "eslint": "^6.8.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.14"
   }
 }
