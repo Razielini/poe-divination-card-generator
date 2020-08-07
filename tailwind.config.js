@@ -5,16 +5,25 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  purge: [
-    './pages/**/*.vue',
-    './components/**/*.vue',
-    './plugins/**/*.vue',
-    './static/**/*.vue',
-    './store/**/*.vue'
-  ],
   prefix: 'tw-',
   important: false,
   separator: ':',
+  purge: {
+    enabled: true,
+    content: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ],
+    options: {
+      whitelist: [
+      ],
+      whitelistPatternsChildren: [
+      ]
+    }
+  },
   theme: {
     screens: {
       sm: '640px',
@@ -35,7 +44,7 @@ module.exports = {
       borderinput: '#88623b',
       bgitembench: '#211b14',
       borderitembench: '#131111',
-      hoverpagination: '#b8905f',
+      hoverpagination: '#b8905f'
     },
     spacing: {
       px: '1px',
