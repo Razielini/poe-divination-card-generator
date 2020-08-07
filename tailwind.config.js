@@ -5,10 +5,13 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./src/**/*.html']
-  },
+  purge: [
+    './pages/**/*.vue',
+    './components/**/*.vue',
+    './plugins/**/*.vue',
+    './static/**/*.vue',
+    './store/**/*.vue'
+  ],
   prefix: 'tw-',
   important: false,
   separator: ':',
