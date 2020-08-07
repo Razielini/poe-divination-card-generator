@@ -3,7 +3,7 @@
     class="footer-bench md:tw-absolute"
   >
     <div
-      class="tw-container tw-py-4 tw-text-xs tw-flex tw-justify-center tw-items-center tw-flex-col md:tw-flex-row tw-justify-around tw-text-center"
+      class="tw-container tw-py-4 tw-text-xs tw-flex tw-items-center tw-flex-col md:tw-flex-row tw-justify-around tw-text-center"
     >
       <div>
         <div

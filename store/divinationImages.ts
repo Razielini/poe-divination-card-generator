@@ -1,3 +1,4 @@
+// This was scraped from the wiki page
 export const state = () => ({
   images: [
     { title: 'A Dab of Ink', src: 'A_Dab_of_Ink_card_art' },

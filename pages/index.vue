@@ -207,6 +207,7 @@ export default class ViewPoeDivination extends Vue {
     itemsPerPage: 9
   }
 
+  // Divination Base Info
   divination: any = {
     title: 'Alone in the Darkness',
     stack: '6',
@@ -215,6 +216,7 @@ export default class ViewPoeDivination extends Vue {
     img: 'Alone_in_the_Darkness_card_art'
   }
 
+  // Pagination for Images
   get divinationPaginated () {
     if (this.width > 600) {
       this.pagination.itemsPerPage = 9
@@ -232,6 +234,7 @@ export default class ViewPoeDivination extends Vue {
     return Math.ceil(Math.trunc(this.divinationImages.length / this.pagination.itemsPerPage))
   }
 
+  // Saving as Image
   saveIMG () {
     this.createCard = true
     htmlToImage.toPng(document.getElementById('wrapper-divination-card'))
